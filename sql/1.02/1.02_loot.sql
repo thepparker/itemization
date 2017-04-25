@@ -47,24 +47,22 @@ delete from reference_loot_template where item=17077 and entry in (326586,326299
 
 delete from gameobject_loot_template where item=18703 and entry=16719;
 
--- Ragnaros
-
-update creature_loot_template set ChanceOrQuestChance=15 where mincountOrRef=-330001;
-replace into reference_loot_template value (322538, 17067, 0, 3, 1, 1, 0);
-update creature_loot_template set ChanceOrQuestChance=0 where mincountOrRef=-322539;
-update creature_loot_template set ChanceOrQuestChance=25 where mincountOrRef=-322538;
-
 -- Garr
 
 update creature_loot_template set ChanceOrQuestChance=30 where mincountOrRef=-326264;
 
 -- Ragnaros
 
-update creature_loot_template set maxcount=1,chanceorquestchance=100 where mincountOrRef=-330001;
+update creature_loot_template set maxcount=1,chanceorquestchance=0 where mincountOrRef=-330001;
+delete from reference_loot_template where entry = 936302 and item = 19137;
 
 -- Onyxia loot table
 
 update creature_loot_template set ChanceOrQuestChance=100 where mincountOrRef=-322538 and entry=10184;
+update creature_loot_template set ChanceOrQuestChance=100 where mincountOrRef = -322539 and entry = 10184;
+delete from reference_loot_template where entry = 322539 and item in (18205, 18813);
+    --  Head and sinew
+update creature_loot_template set ChanceOrQuestChance=0 where entry = 10184 and item in (18422, 18423, 18705);
 
 -- Zul'farrak pre-1.04 fix
 
