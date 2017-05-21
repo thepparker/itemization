@@ -55,6 +55,7 @@ update creature_loot_template set ChanceOrQuestChance=30 where mincountOrRef=-32
 
 update creature_loot_template set maxcount=1,chanceorquestchance=0 where mincountOrRef=-330001;
 delete from reference_loot_template where entry = 936302 and item = 19137;
+update creature_loot_template set ChanceOrQuestChance = 0 where entry = 11502 and item = 17204;
 
 -- Onyxia loot table
 

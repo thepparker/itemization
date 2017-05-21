@@ -171,13 +171,14 @@ update creature_loot_template set ChanceOrQuestChance=30 where mincountOrRef=-32
 
 update creature_loot_template set maxcount=1,chanceorquestchance=0 where mincountOrRef=-330001;
 delete from reference_loot_template where entry = 936302 and item = 19137;
+update creature_loot_template set ChanceOrQuestChance = 0 where entry = 11502 and item = 17204;
 
 -- Onyxia loot table
 
 update creature_loot_template set ChanceOrQuestChance=100 where mincountOrRef=-322538 and entry=10184;
 update creature_loot_template set ChanceOrQuestChance=100 where mincountOrRef = -322539 and entry = 10184;
 delete from reference_loot_template where entry = 322539 and item in (18205, 18813);
-    --  Head and sinew
+--  Head and sinew
 update creature_loot_template set ChanceOrQuestChance=0 where entry = 10184 and item in (18422, 18423, 18705);
 
 -- Zul'farrak pre-1.04 fix
