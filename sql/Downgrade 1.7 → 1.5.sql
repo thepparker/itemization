@@ -7557,7 +7557,8 @@ REPLACE INTO `item_template`
 
 -- Misc craftables which should have been available since 1.2
 -- Dawnbringer Shoulders (ilevel 58 entry 12625)
-INSERT IGNORE INTO `item_template` VALUES ('12625', '4', '4', 'Dawnbringer Shoulders', '25827', '3', '0', '1', '114235', '22847', '3', '-1', '-1', '58', '53', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '6', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '455', '0', '0', '0', '0', '0', '0', '0', '0', '0', '17371', '1', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '2', '', '0', '0', '0', '0', '0', '6', '0', '0', '0', '0', '80', '0', '0', '0', '', '48', '0', '0', '0', '0', '0', '1');
+DELETE FROM item_template WHERE entry = 12625;
+INSERT INTO `item_template` VALUES ('12625', '4', '4', 'Dawnbringer Shoulders', '25827', '3', '0', '1', '114235', '22847', '3', '-1', '-1', '58', '53', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '6', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '455', '0', '0', '0', '0', '0', '0', '0', '0', '0', '17371', '1', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '2', '', '0', '0', '0', '0', '0', '6', '0', '0', '0', '0', '80', '0', '0', '0', '', '48', '0', '0', '0', '0', '0', '1');
 REPLACE INTO `item_template` VALUES ('12698', '9', '4', 'Plans: Dawnbringer Shoulders', '1102', '3', '64', '1', '22000', '5500', '0', '-1', '-1', '58', '0', '164', '290', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '-1', '0', '-1', '0', '-1', '16660', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', 'Teaches you how to make Dawnbringer Shoulders.', '0', '0', '0', '0', '0', '-1', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0', '0', '0', '0', '1');
 -- Inlaid Thorium Hammer (ilevel 54 entry 12772)
 INSERT IGNORE INTO `item_template` VALUES ('12772', '2', '5', 'Inlaid Thorium Hammer', '23230', '2', '0', '1', '194358', '38871', '17', '-1', '-1', '54', '49', '160', '0', '0', '0', '0', '0', '0', '0', '1', '0', '4', '23', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '100', '151', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3000', '0', '0', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '0', '0', '0', '0', '-1', '0', '-1', '2', '', '0', '0', '0', '0', '0', '2', '1', '0', '0', '0', '85', '0', '0', '0', '', '29', '0', '0', '0', '0', '0', '1');
@@ -7605,6 +7606,9 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 
 -- AQ quest starter item
 REPLACE INTO `forbidden_items` (SELECT `entry` FROM `item_template` WHERE `entry` = 20461);
+
+-- Despawn [The Severed Head of Nefarian]
+UPDATE gameobject SET spawntimesecs = -1 WHERE guid = 1264334;
 
 -- NOT FOUND: Blackhand's Command (BWL Attunement Quest)
 REPLACE INTO `forbidden_items` (SELECT `entry` FROM `item_template` WHERE `entry` = 18987);
@@ -7732,3 +7736,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`, `spawnFlags`) VALUES (24048, 14561, 1, 14583, 0, -3848.26, -4393.54, 10.2239, 5.44543, 360, 0, 0, 64, 53, 0, 0, 0);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`, `spawnFlags`) VALUES (81385, 14561, 0, 14583, 0, -9444.04, -1412.16, 46.9049, 1.72788, 180, 0, 0, 64, 53, 0, 0, 0);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`, `spawnFlags`) VALUES (46180, 14602, 1, 14632, 0, 10132.9, 2527.95, 1325.16, 4.01426, 300, 0, 0, 64, 0, 0, 0);
+ 
+ -- Remove old stables
+ DELETE FROM `creature` where guid IN (81385, 81388, 4155, 4156, 176, 174, 49183, 48577, 6614, 6617, 6405, 6404, 26644, 26654);
