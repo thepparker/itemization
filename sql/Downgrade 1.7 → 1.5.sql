@@ -7613,6 +7613,9 @@ UPDATE gameobject SET spawntimesecs = -1 WHERE guid = 1264334;
 -- NOT FOUND: Blackhand's Command (BWL Attunement Quest)
 REPLACE INTO `forbidden_items` (SELECT `entry` FROM `item_template` WHERE `entry` = 18987);
 
+-- Thunderfury Bindings
+REPLACE INTO `forbidden_items` (SELECT `entry` FROM `item_template` WHERE `entry` IN (18563, 18564));
+
 -- Forbidden Items & quests for 1.5
 REPLACE INTO forbidden_items SELECT entry FROM item_template WHERE entry BETWEEN 19574 AND 20266;
 REPLACE INTO forbidden_items SELECT entry FROM item_template WHERE entry IN (12056, 12057, 22637, 22722, 22721, 22720, 22718, 22711, 22712, 22715, 22714, 22716, 22713);
