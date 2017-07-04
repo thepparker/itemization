@@ -7589,6 +7589,9 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (13816, 8271), (1381
 DELETE FROM `creature_involvedrelation` WHERE `quest` IN (8271, 8272);
 INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (13816, 8271), (13817, 8272);
 
+-- Enable AV quest
+UPDATE `quest_template` SET `Method` = 2 WHERE `entry` IN (7161, 7162);
+
 -- New Azuregos drops
 -- Should already be available on Darrowshire
 -- NOT FOUND: Snowblind Shoes (ilevel 69 entry 19131)
