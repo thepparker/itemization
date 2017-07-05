@@ -905,7 +905,7 @@ UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=11924;
 -- * Modified spell 2
 -- 1.12 spell 18196 (Increased Defense +15.)
 -- 1.04 spell 0
-UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0, `spellid_1`=21418, `spelltrigger_1`=1 WHERE entry=11927;
+UPDATE item_template SET `spellid_2`=21418, `spelltrigger_2`=1 WHERE entry=11927;
 -- STATS CHANGED: Thaurissan's Royal Scepter (ilevel 60 entry 11928). 1/2 versions
 UPDATE item_template SET `stat_value1`=15 WHERE entry=11928;
 -- SPELLS REMOVED: Thaurissan's Royal Scepter (ilevel 60 entry 11928). 2 versions
