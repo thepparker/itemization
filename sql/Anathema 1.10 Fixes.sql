@@ -41,6 +41,17 @@ UPDATE `gameobject` SET `state` = 0 WHERE id = 176146;
 -- Quest #8800 is linked to Vargus, npc #15176
 DELETE FROM creature_involvedrelation WHERE quest = 8800 AND id = 15176;
 INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (15176, 8800);
+
+-- Add Mor Grayhoof spawn triggers
+DELETE FROM `creature_ai_scripts` WHERE `id` IN (1604401, 1604402) AND `creature_id` = 16044;
+INSERT INTO `creature_ai_scripts` 
+    VALUES  ('1604401', '16044', '8', '0', '100', '2', '27184', '-1', '0', '0', '12', '16080', '1', '60000', '41', '0', '0', '0', '0', '0', '0', '0', 'Mor Grayhoof Trigger - Spawn Mor Grayhoof and Despawn Trigger on Summon Mor Grayhoof DND Spellhit'),
+            ('1604402', '16044', '8', '0', '100', '2', '27203', '-1', '0', '0', '12', '16080', '1', '60000', '41', '0', '0', '0', '0', '0', '0', '0', 'Mor Grayhoof Trigger - Spawn Mor Grayhoof and Despawn Trigger on Summon Various DND Spellhit');
+UPDATE `creature_template` SET `AIName` = 'EventAI' WHERE `entry` = 16044;
+
+-- Disable T0.5 100% test spawns
+UPDATE `creature` SET `spawnFlags` = 2 WHERE `id` in (16042, 16080, 16118, 16101, 16102, 16097);
+
 -- FINAL QUEST CLEANUP
 UPDATE `quest_template` SET `Method` = (Method | 1) WHERE entry IN (SELECT * FROM forbidden_quests);
 DELETE FROM areatrigger_involvedrelation WHERE quest IN (SELECT * from forbidden_quests);
