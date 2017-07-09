@@ -69,7 +69,7 @@ UPDATE `creature_template`
 -- but the same faction so that the healers can heal
 UPDATE `creature_template` 
     SET     `faction_A` = 48, `faction_H` = 48
-    WHERE   `entry` IN (16049, 16050, 16051, 16052, 16053, 16054, 16055, 16058, 16059);
+    WHERE   `entry` IN (16049, 16050, 16051, 16052, 16053, 16054, 16055, 16058, 16059, 16095);
 
 -- Fix spells on Theldren and his companions
 -- Lefty's Five Fat Finger Exploding Heart Technique
