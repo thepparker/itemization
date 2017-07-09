@@ -81,8 +81,6 @@ UPDATE `creature_template` SET `spell1` = 21401, `spell2` = 15786, `spell3` = 11
 UPDATE `creature_template` SET `spell1` = 17547, `spell2` = 20252, `spell3` = 19134 WHERE `entry` = 16059;
 -- Malgen's Aimed Shot, Frost Trap and Pet, Gnashjaw
 UPDATE `creature_template` SET `spell2` = 20902, `spell4` = 13809, `PetSpellDataId` = 19561 WHERE `entry` = 16052;
--- Generic spell AI until real AIs are implemented in the core
-UPDATE `creature_template` SET `ScriptName` = 'generic_spell_ai' WHERE `entry` IN (16049, 16053, 16055, 16059);
 
 -- FINAL QUEST CLEANUP
 UPDATE `quest_template` SET `Method` = (Method | 1) WHERE entry IN (SELECT * FROM forbidden_quests);
