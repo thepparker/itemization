@@ -10,7 +10,7 @@ UPDATE item_template SET `stat_value1`=0, `stat_type3`=3, `stat_value3`=11 WHERE
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=2620;
 -- NOT FOUND: Monster - Item, Lantern - Round (ilevel 1 entry 2715)
-DELETE FROM item_template WHERE entry=2715;
+-- DELETE FROM item_template WHERE entry=2715;
 -- SPELLS REMOVED: Hurricane (ilevel 53 entry 2824). 3 versions
 -- Source: http://wow.allakhazam.com/item.html?witem=2824
 -- Source: http://www.thottbot.com/?n=91161
@@ -702,7 +702,7 @@ UPDATE item_template SET `spellid_1`=23480 WHERE entry=12260;
 -- Source: http://wow.allakhazam.com/item.html?witem=12528
 UPDATE item_template SET `delay`=2900, `dmg_min1`=104, `dmg_max1`=157 WHERE entry=12400;
 -- NOT FOUND: Desertwalker Cane (ilevel 47 entry 12471)
-DELETE FROM item_template WHERE entry=12471;
+-- DELETE FROM item_template WHERE entry=12471;
 -- SPELLS REMOVED: The Judge's Gavel (ilevel 52 entry 12528). 3 versions
 -- Source: http://wow.allakhazam.com/dyn/items/itype17.html
 -- Source: http://wow.allakhazam.com/dyn/items/wratio5.html
@@ -779,7 +779,7 @@ UPDATE item_template SET `spellid_1`=21409 WHERE entry=12618;
 -- 1.08 spell 21409 (Increased Defense +13.)
 UPDATE item_template SET `spellid_1`=21409 WHERE entry=12620;
 -- NOT FOUND: Dawnbringer Shoulders (ilevel 58 entry 12625)
-DELETE FROM item_template WHERE entry=12625;
+-- DELETE FROM item_template WHERE entry=12625;
 -- SPELLS REMOVED: Whitesoul Helm (ilevel 60 entry 12633). 6 versions
 -- Source: http://www.thottbot.com/?i=Thorium%20Bar
 -- Source: http://www.thottbot.com/?i=Whitesoul%20Helm
@@ -1631,13 +1631,13 @@ UPDATE item_template SET `spellid_1`=23481 WHERE entry=15107;
 -- Source: http://www.thottbot.com/?n=2570
 UPDATE item_template SET `dmg_min1`=20, `dmg_max1`=20 WHERE entry=15808;
 -- NOT FOUND: Test Arcane Res Legs Mail (ilevel 35 entry 16165)
-DELETE FROM item_template WHERE entry=16165;
+-- DELETE FROM item_template WHERE entry=16165;
 -- STATS CHANGED: Knight-Lieutenant's Leather Boots (ilevel 63 entry 16392). 1/1 versions
 UPDATE item_template SET `stat_value1`=23, `stat_value2`=0 WHERE entry=16392;
 -- NOT FOUND: Knight-Lieutenant's Chain Boots (ilevel 63 entry 16401)
-DELETE FROM item_template WHERE entry=16401;
+-- DELETE FROM item_template WHERE entry=16401;
 -- NOT FOUND: Knight-Lieutenant's Chain Gauntlets (ilevel 63 entry 16403)
-DELETE FROM item_template WHERE entry=16403;
+-- DELETE FROM item_template WHERE entry=16403;
 -- SPELLS CHANGED: Knight-Captain's Dragonhide Tunic (ilevel 63 entry 16421). 2 versions
 -- Source: http://www.thottbot.com/?set=381
 -- Source: http://wow.allakhazam.com/dyn/items/iname5.html
@@ -3427,7 +3427,7 @@ UPDATE item_template SET `spellid_2`=13386 WHERE entry=16965;
 -- 1.08 spell 21407 (Increased Defense +11.)
 UPDATE item_template SET `spellid_1`=21407 WHERE entry=16966;
 -- NOT FOUND: Juno's Shadow (ilevel 58 entry 17061)
-DELETE FROM item_template WHERE entry=17061;
+-- DELETE FROM item_template WHERE entry=17061;
 -- DAMAGE CHANGED: Fang of the Mystics (ilevel 70 entry 17070). 1/6 versions
 -- Source: http://wow.allakhazam.com/dyn/items/iname13.html
 -- Source: http://wow.allakhazam.com/item.html?witem=17070
@@ -3903,7 +3903,7 @@ UPDATE item_template SET `spellid_1`=21596 WHERE entry=18298;
 -- STATS CHANGED: Satyr's Bow (ilevel 58 entry 18323). 1/3 versions
 UPDATE item_template SET `stat_value1`=7 WHERE entry=18323;
 -- NOT FOUND: Gauntlets of Accuracy (ilevel 61 entry 18349)
-DELETE FROM item_template WHERE entry=18349;
+-- DELETE FROM item_template WHERE entry=18349;
 -- SPELLS CHANGED: Evil Eye Pendant (ilevel 62 entry 18381). 2 versions
 -- Source: http://wow.allakhazam.com/item.html?witem=18381
 -- Source: http://www.thottbot.com/?n=614364
@@ -4035,7 +4035,7 @@ UPDATE item_template SET `spellid_1`=25110 WHERE entry=18475;
 -- 1.08 spell 18369 (Increased Defense +9.)
 UPDATE item_template SET `spellid_1`=18369 WHERE entry=18493;
 -- NOT FOUND: Denwatcher's Shoulders (ilevel 60 entry 18494)
-DELETE FROM item_template WHERE entry=18494;
+-- DELETE FROM item_template WHERE entry=18494;
 -- SPELLS CHANGED: Redoubt Cloak (ilevel 63 entry 18495). 3 versions
 -- Source: http://wow.allakhazam.com/item.html?witem=18495
 -- Source: http://www.thottbot.com/?n=478397 / http://wow.allakhazam.com/profile.html?55827
@@ -4091,9 +4091,9 @@ UPDATE item_template SET `holy_res`=100, `arcane_res`=0 WHERE entry=18582;
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0, `spellid_2`=0 WHERE entry=18582;
 -- NOT FOUND: Warglaive of Azzinoth (Right) (ilevel 100 entry 18583)
-DELETE FROM item_template WHERE entry=18583;
+-- DELETE FROM item_template WHERE entry=18583;
 -- NOT FOUND: Warglaive of Azzinoth (Left) (ilevel 100 entry 18584)
-DELETE FROM item_template WHERE entry=18584;
+-- DELETE FROM item_template WHERE entry=18584;
 -- SPELLS CHANGED: Tome of Sacrifice (ilevel 60 entry 18602). 1 versions
 -- Source: http://wow.allakhazam.com/item.html?witem=18602
 -- * Modified spell 1
@@ -4109,9 +4109,9 @@ UPDATE item_template SET `spellid_1`=21347 WHERE entry=18602;
 -- 1.08 spell 26225 (Increases healing done by spells and effects by up to 106.)
 UPDATE item_template SET `spellid_3`=26225 WHERE entry=18608;
 -- NOT FOUND: Bloody Chain Boots (ilevel 8 entry 18612)
-DELETE FROM item_template WHERE entry=18612;
+-- DELETE FROM item_template WHERE entry=18612;
 -- NOT FOUND: Sash of the Windreaver (ilevel 61 entry 18676)
-DELETE FROM item_template WHERE entry=18676;
+-- DELETE FROM item_template WHERE entry=18676;
 -- SPELLS CHANGED: Dark Advisor's Pendant (ilevel 61 entry 18691). 1 versions
 -- Source: http://www.thottbot.com/?i=Dark%20Advisor%27s%20Pendant / http://wow.allakhazam.com/item.html?witem=18691
 -- * Modified spell 1
@@ -4119,7 +4119,7 @@ DELETE FROM item_template WHERE entry=18676;
 -- 1.08 spell 25064 (Increases damage done by shadow spells and effects by up to 20.)
 UPDATE item_template SET `spellid_1`=25064 WHERE entry=18691;
 -- NOT FOUND: Death Knight Sabatons (ilevel 59 entry 18692)
-DELETE FROM item_template WHERE entry=18692;
+-- DELETE FROM item_template WHERE entry=18692;
 -- SPELLS CHANGED: Rhok'delar, Longbow of the Ancient Keepers (ilevel 75 entry 18713). 3 versions
 -- Source: http://wow.allakhazam.com/item.html?witem=18713
 -- Source: http://wow.allakhazam.com/dyn/items/wminlev2.html
@@ -4163,7 +4163,7 @@ UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=18759;
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=18760;
 -- NOT FOUND: Gloves of the Hypnotic Flame (ilevel 70 entry 18808)
-DELETE FROM item_template WHERE entry=18808;
+-- DELETE FROM item_template WHERE entry=18808;
 -- STATS CHANGED: Sash of Whispered Secrets (ilevel 71 entry 18809). 1/1 versions
 UPDATE item_template SET `stat_value1`=17 WHERE entry=18809;
 -- SPELLS CHANGED: Sash of Whispered Secrets (ilevel 71 entry 18809). 1 versions
@@ -4298,23 +4298,23 @@ UPDATE item_template SET `dmg_min1`=115, `dmg_max1`=173 WHERE entry=18865;
 -- 1.08 spell 9141 (+12 Attack Power.)
 UPDATE item_template SET `spellid_2`=9141 WHERE entry=18865;
 -- NOT FOUND: Ring of Critical Testing 2 (ilevel 60 entry 18970)
-DELETE FROM item_template WHERE entry=18970;
+-- DELETE FROM item_template WHERE entry=18970;
 -- NOT FOUND: Elegant Dress (ilevel 30 entry 19028)
-DELETE FROM item_template WHERE entry=19028;
+-- DELETE FROM item_template WHERE entry=19028;
 -- NOT FOUND: Frostwolf Plate Belt (ilevel 60 entry 19087)
-DELETE FROM item_template WHERE entry=19087;
+-- DELETE FROM item_template WHERE entry=19087;
 -- NOT FOUND: Frostwolf Mail Belt (ilevel 60 entry 19088)
-DELETE FROM item_template WHERE entry=19088;
+-- DELETE FROM item_template WHERE entry=19088;
 -- NOT FOUND: Frostwolf Leather Belt (ilevel 60 entry 19089)
-DELETE FROM item_template WHERE entry=19089;
+-- DELETE FROM item_template WHERE entry=19089;
 -- NOT FOUND: Frostwolf Cloth Belt (ilevel 60 entry 19090)
-DELETE FROM item_template WHERE entry=19090;
+-- DELETE FROM item_template WHERE entry=19090;
 -- NOT FOUND: Stormpike Plate Girdle (ilevel 60 entry 19091)
-DELETE FROM item_template WHERE entry=19091;
+-- DELETE FROM item_template WHERE entry=19091;
 -- NOT FOUND: Stormpike Mail Girdle (ilevel 60 entry 19092)
-DELETE FROM item_template WHERE entry=19092;
+-- DELETE FROM item_template WHERE entry=19092;
 -- NOT FOUND: Stormpike Leather Girdle (ilevel 60 entry 19093)
-DELETE FROM item_template WHERE entry=19093;
+-- DELETE FROM item_template WHERE entry=19093;
 -- SPELLS REMOVED: Frost Runed Headdress (ilevel 63 entry 19105). 1 versions
 -- Source: http://wow.allakhazam.com/dyn/items/iminlev1.html
 -- * Modified spell 1
@@ -4322,19 +4322,19 @@ DELETE FROM item_template WHERE entry=19093;
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=19105;
 -- NOT FOUND: Frozen Steel Vambraces (ilevel 63 entry 19112)
-DELETE FROM item_template WHERE entry=19112;
+-- DELETE FROM item_template WHERE entry=19112;
 -- NOT FOUND: Flask of Forest Mojo (ilevel 51 entry 19115)
-DELETE FROM item_template WHERE entry=19115;
+-- DELETE FROM item_template WHERE entry=19115;
 -- NOT FOUND: Greenleaf Handwraps (ilevel 50 entry 19116)
-DELETE FROM item_template WHERE entry=19116;
+-- DELETE FROM item_template WHERE entry=19116;
 -- NOT FOUND: Owlbeast Hide Gloves (ilevel 50 entry 19119)
-DELETE FROM item_template WHERE entry=19119;
+-- DELETE FROM item_template WHERE entry=19119;
 -- NOT FOUND: Snowblind Shoes (ilevel 69 entry 19131)
-DELETE FROM item_template WHERE entry=19131;
+-- DELETE FROM item_template WHERE entry=19131;
 -- NOT FOUND: Flayed Doomguard Belt (ilevel 68 entry 19134)
-DELETE FROM item_template WHERE entry=19134;
+-- DELETE FROM item_template WHERE entry=19134;
 -- NOT FOUND: Flameguard Gauntlets (ilevel 69 entry 19143)
-DELETE FROM item_template WHERE entry=19143;
+-- DELETE FROM item_template WHERE entry=19143;
 -- DAMAGE CHANGED: Nightfall (ilevel 70 entry 19169). 1/4 versions
 -- Source: http://www.thottbot.com/?i=Fiery%20Core
 -- Source: http://wow.allakhazam.com/item.html?witem=19169
@@ -4348,9 +4348,9 @@ UPDATE item_template SET `delay`=3200, `dmg_min1`=171, `dmg_max1`=258 WHERE entr
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=19302;
 -- NOT FOUND: Darkmoon Necklace (ilevel 55 entry 19303)
-DELETE FROM item_template WHERE entry=19303;
+-- DELETE FROM item_template WHERE entry=19303;
 -- NOT FOUND: Tome of Arcane Domination (ilevel 65 entry 19308)
-DELETE FROM item_template WHERE entry=19308;
+-- DELETE FROM item_template WHERE entry=19308;
 -- SPELLS REMOVED: Spineshatter (ilevel 73 entry 19335). 1 versions
 -- Source: http://wow.allakhazam.com/dyn/items/wminlev4.html
 -- * Modified spell 1
@@ -4358,7 +4358,7 @@ DELETE FROM item_template WHERE entry=19308;
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=19335;
 -- NOT FOUND: Natural Alignment Crystal (ilevel 76 entry 19344)
-DELETE FROM item_template WHERE entry=19344;
+-- DELETE FROM item_template WHERE entry=19344;
 -- SPELLS CHANGED: Elementium Reinforced Bulwark (ilevel 77 entry 19349). 2 versions
 -- Source: http://www.thottbot.com/?n=685336
 -- Source: http://wow.allakhazam.com/item.html?witem=19349
@@ -4383,39 +4383,39 @@ UPDATE item_template SET `dmg_min1`=47, `dmg_max1`=127 WHERE entry=19360;
 -- 1.08 spell 0
 UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=19365;
 -- NOT FOUND: Master Dragonslayer's Orb (ilevel 83 entry 19366)
-DELETE FROM item_template WHERE entry=19366;
+-- DELETE FROM item_template WHERE entry=19366;
 -- NOT FOUND: Mish'undare, Circlet of the Mind Flayer (ilevel 83 entry 19375)
-DELETE FROM item_template WHERE entry=19375;
+-- DELETE FROM item_template WHERE entry=19375;
 -- NOT FOUND: Prestor's Talisman of Connivery (ilevel 83 entry 19377)
-DELETE FROM item_template WHERE entry=19377;
+-- DELETE FROM item_template WHERE entry=19377;
 -- NOT FOUND: Cloak of the Brood Lord (ilevel 83 entry 19378)
-DELETE FROM item_template WHERE entry=19378;
+-- DELETE FROM item_template WHERE entry=19378;
 -- NOT FOUND: Neltharion's Tear (ilevel 83 entry 19379)
-DELETE FROM item_template WHERE entry=19379;
+-- DELETE FROM item_template WHERE entry=19379;
 -- NOT FOUND: Therazane's Link (ilevel 83 entry 19380)
-DELETE FROM item_template WHERE entry=19380;
+-- DELETE FROM item_template WHERE entry=19380;
 -- NOT FOUND: Boots of the Shadow Flame (ilevel 83 entry 19381)
-DELETE FROM item_template WHERE entry=19381;
+-- DELETE FROM item_template WHERE entry=19381;
 -- NOT FOUND: Pure Elementium Band (ilevel 83 entry 19382)
-DELETE FROM item_template WHERE entry=19382;
+-- DELETE FROM item_template WHERE entry=19382;
 -- NOT FOUND: Master Dragonslayer's Medallion (ilevel 83 entry 19383)
-DELETE FROM item_template WHERE entry=19383;
+-- DELETE FROM item_template WHERE entry=19383;
 -- NOT FOUND: Master Dragonslayer's Ring (ilevel 83 entry 19384)
-DELETE FROM item_template WHERE entry=19384;
+-- DELETE FROM item_template WHERE entry=19384;
 -- NOT FOUND: Empowered Leggings (ilevel 77 entry 19385)
-DELETE FROM item_template WHERE entry=19385;
+-- DELETE FROM item_template WHERE entry=19385;
 -- STATS CHANGED: Chromatic Boots (ilevel 77 entry 19387). 1/1 versions
 UPDATE item_template SET `stat_value3`=12 WHERE entry=19387;
 -- NOT FOUND: Taut Dragonhide Shoulderpads (ilevel 77 entry 19389)
-DELETE FROM item_template WHERE entry=19389;
+-- DELETE FROM item_template WHERE entry=19389;
 -- NOT FOUND: Taut Dragonhide Gloves (ilevel 77 entry 19390)
-DELETE FROM item_template WHERE entry=19390;
+-- DELETE FROM item_template WHERE entry=19390;
 -- NOT FOUND: Girdle of the Fallen Crusader (ilevel 77 entry 19392)
-DELETE FROM item_template WHERE entry=19392;
+-- DELETE FROM item_template WHERE entry=19392;
 -- NOT FOUND: Primalist's Linked Waistguard (ilevel 77 entry 19393)
-DELETE FROM item_template WHERE entry=19393;
+-- DELETE FROM item_template WHERE entry=19393;
 -- NOT FOUND: Ebony Flame Gloves (ilevel 75 entry 19407)
-DELETE FROM item_template WHERE entry=19407;
+-- DELETE FROM item_template WHERE entry=19407;
 -- STATS CHANGED: Orb of the Darkmoon (ilevel 65 entry 19426). 1/2 versions
 UPDATE item_template SET `stat_value1`=7, `stat_value2`=0 WHERE entry=19426;
 -- SPELLS CHANGED: Orb of the Darkmoon (ilevel 65 entry 19426). 2 versions
@@ -4434,19 +4434,19 @@ UPDATE item_template SET Quality=3 WHERE entry=19426;
 -- 1.08 spell 21409 (Increased Defense +13.)
 UPDATE item_template SET `spellid_3`=21409 WHERE entry=19431;
 -- NOT FOUND: Emberweave Leggings (ilevel 75 entry 19433)
-DELETE FROM item_template WHERE entry=19433;
+-- DELETE FROM item_template WHERE entry=19433;
 -- NOT FOUND: Boots of Pure Thought (ilevel 70 entry 19437)
-DELETE FROM item_template WHERE entry=19437;
+-- DELETE FROM item_template WHERE entry=19437;
 -- STATS CHANGED: Amulet of the Darkmoon (ilevel 65 entry 19491). 1/2 versions
 UPDATE item_template SET `stat_value1`=18, `stat_value2`=7, `stat_value3`=0 WHERE entry=19491;
 -- QUALITY CHANGED: Amulet of the Darkmoon (ilevel 65 entry 19491)
 UPDATE item_template SET Quality=3 WHERE entry=19491;
 -- NOT FOUND: Strength of Mugamba (ilevel 60 entry 19574)
-DELETE FROM item_template WHERE entry=19574;
+-- DELETE FROM item_template WHERE entry=19574;
 -- NOT FOUND: Strength of Mugamba (ilevel 60 entry 19575)
-DELETE FROM item_template WHERE entry=19575;
+-- DELETE FROM item_template WHERE entry=19575;
 -- NOT FOUND: Strength of Mugamba (ilevel 68 entry 19576)
-DELETE FROM item_template WHERE entry=19576;
+-- DELETE FROM item_template WHERE entry=19576;
 -- STATS CHANGED: Heathen's Brand (ilevel 60 entry 19579). 2/2 versions
 -- CONFLICT:
 -- 2005-11-10 20:59:31 to 2006-03-22 10:05:33 (days delta 136) on for example: http://wow.allakhazam.com/db/quest.html?wquest=8048
@@ -4456,31 +4456,31 @@ UPDATE item_template SET `stat_type4`=5, `stat_value4`=6 WHERE entry=19579;
 -- QUALITY CHANGED: Heathen's Brand (ilevel 60 entry 19579)
 UPDATE item_template SET Quality=3 WHERE entry=19579;
 -- NOT FOUND: Heathen's Brand (ilevel 60 entry 19585)
-DELETE FROM item_template WHERE entry=19585;
+-- DELETE FROM item_template WHERE entry=19585;
 -- NOT FOUND: Heathen's Brand (ilevel 68 entry 19586)
-DELETE FROM item_template WHERE entry=19586;
+-- DELETE FROM item_template WHERE entry=19586;
 -- NOT FOUND: Forest Stalker's Bracers (ilevel 65 entry 19587)
-DELETE FROM item_template WHERE entry=19587;
+-- DELETE FROM item_template WHERE entry=19587;
 -- NOT FOUND: Hero's Brand (ilevel 65 entry 19588)
-DELETE FROM item_template WHERE entry=19588;
+-- DELETE FROM item_template WHERE entry=19588;
 -- NOT FOUND: Forest Stalker's Bracers (ilevel 45 entry 19590)
-DELETE FROM item_template WHERE entry=19590;
+-- DELETE FROM item_template WHERE entry=19590;
 -- QUALITY CHANGED: The Eye of Zuldazar (ilevel 60 entry 19591)
 UPDATE item_template SET Quality=3 WHERE entry=19591;
 -- NOT FOUND: The Eye of Zuldazar (ilevel 60 entry 19592)
-DELETE FROM item_template WHERE entry=19592;
+-- DELETE FROM item_template WHERE entry=19592;
 -- NOT FOUND: The Eye of Zuldazar (ilevel 68 entry 19593)
-DELETE FROM item_template WHERE entry=19593;
+-- DELETE FROM item_template WHERE entry=19593;
 -- NOT FOUND: Dryad's Wrist Bindings (ilevel 65 entry 19595)
-DELETE FROM item_template WHERE entry=19595;
+-- DELETE FROM item_template WHERE entry=19595;
 -- NOT FOUND: Dryad's Wrist Bindings (ilevel 45 entry 19597)
-DELETE FROM item_template WHERE entry=19597;
+-- DELETE FROM item_template WHERE entry=19597;
 -- NOT FOUND: Pebble of Kajaro (ilevel 60 entry 19598)
-DELETE FROM item_template WHERE entry=19598;
+-- DELETE FROM item_template WHERE entry=19598;
 -- NOT FOUND: Pebble of Kajaro (ilevel 60 entry 19599)
-DELETE FROM item_template WHERE entry=19599;
+-- DELETE FROM item_template WHERE entry=19599;
 -- NOT FOUND: Pebble of Kajaro (ilevel 68 entry 19600)
-DELETE FROM item_template WHERE entry=19600;
+-- DELETE FROM item_template WHERE entry=19600;
 -- STATS CHANGED: Kezan's Taint (ilevel 60 entry 19602). 2/2 versions
 -- CONFLICT:
 -- 2005-11-27 07:35:54 to 2006-03-19 11:38:38 (days delta 116) on for example: http://wow.allakhazam.com/db/quest.html?wquest=8108
@@ -4490,29 +4490,29 @@ UPDATE item_template SET `stat_value1`=13, `stat_type2`=5, `stat_value2`=8 WHERE
 -- QUALITY CHANGED: Kezan's Taint (ilevel 60 entry 19602)
 UPDATE item_template SET Quality=3 WHERE entry=19602;
 -- NOT FOUND: Kezan's Taint (ilevel 60 entry 19603)
-DELETE FROM item_template WHERE entry=19603;
+-- DELETE FROM item_template WHERE entry=19603;
 -- NOT FOUND: Kezan's Taint (ilevel 68 entry 19604)
-DELETE FROM item_template WHERE entry=19604;
+-- DELETE FROM item_template WHERE entry=19604;
 -- STATS CHANGED: Kezan's Unstoppable Taint (ilevel 65 entry 19605). 1/1 versions
 UPDATE item_template SET `stat_value1`=8, `stat_value2`=13 WHERE entry=19605;
 -- NOT FOUND: Vision of Voodress (ilevel 60 entry 19606)
-DELETE FROM item_template WHERE entry=19606;
+-- DELETE FROM item_template WHERE entry=19606;
 -- NOT FOUND: Vision of Voodress (ilevel 60 entry 19607)
-DELETE FROM item_template WHERE entry=19607;
+-- DELETE FROM item_template WHERE entry=19607;
 -- NOT FOUND: Vision of Voodress (ilevel 68 entry 19608)
-DELETE FROM item_template WHERE entry=19608;
+-- DELETE FROM item_template WHERE entry=19608;
 -- NOT FOUND: Enchanted South Seas Kelp (ilevel 60 entry 19611)
-DELETE FROM item_template WHERE entry=19611;
+-- DELETE FROM item_template WHERE entry=19611;
 -- NOT FOUND: Enchanted South Seas Kelp (ilevel 68 entry 19612)
-DELETE FROM item_template WHERE entry=19612;
+-- DELETE FROM item_template WHERE entry=19612;
 -- STATS CHANGED: Zandalarian Shadow Talisman (ilevel 60 entry 19614). 1/1 versions
 UPDATE item_template SET `stat_value1`=15, `stat_value2`=9, `stat_type3`=4, `stat_value3`=6 WHERE entry=19614;
 -- QUALITY CHANGED: Zandalarian Shadow Talisman (ilevel 60 entry 19614)
 UPDATE item_template SET Quality=3 WHERE entry=19614;
 -- NOT FOUND: Zandalarian Shadow Talisman (ilevel 60 entry 19615)
-DELETE FROM item_template WHERE entry=19615;
+-- DELETE FROM item_template WHERE entry=19615;
 -- NOT FOUND: Zandalarian Shadow Talisman (ilevel 68 entry 19616)
-DELETE FROM item_template WHERE entry=19616;
+-- DELETE FROM item_template WHERE entry=19616;
 -- STATS CHANGED: Maelstrom's Tendril (ilevel 60 entry 19618). 2/2 versions
 -- CONFLICT:
 -- 2005-11-30 20:39:58 to 2006-12-31 11:00:17 (days delta 404) on for example: http://wow.allakhazam.com/item.html?witem=19620
@@ -4522,15 +4522,15 @@ UPDATE item_template SET `stat_type3`=5, `stat_value3`=6 WHERE entry=19618;
 -- QUALITY CHANGED: Maelstrom's Tendril (ilevel 60 entry 19618)
 UPDATE item_template SET Quality=3 WHERE entry=19618;
 -- NOT FOUND: Maelstrom's Tendril (ilevel 60 entry 19619)
-DELETE FROM item_template WHERE entry=19619;
+-- DELETE FROM item_template WHERE entry=19619;
 -- NOT FOUND: Maelstrom's Tendril (ilevel 68 entry 19620)
-DELETE FROM item_template WHERE entry=19620;
+-- DELETE FROM item_template WHERE entry=19620;
 -- NOT FOUND: Bounty of the Harvest (ilevel 1 entry 19697)
-DELETE FROM item_template WHERE entry=19697;
+-- DELETE FROM item_template WHERE entry=19697;
 -- NOT FOUND: Overlord's Embrace (ilevel 71 entry 19760)
-DELETE FROM item_template WHERE entry=19760;
+-- DELETE FROM item_template WHERE entry=19760;
 -- NOT FOUND: Rockhide Strongfish (ilevel 45 entry 19808)
-DELETE FROM item_template WHERE entry=19808;
+-- DELETE FROM item_template WHERE entry=19808;
 -- STATS CHANGED: Zandalar Vindicator's Belt (ilevel 61 entry 19823). 1/2 versions
 UPDATE item_template SET `stat_value1`=18, `armor`=397 WHERE entry=19823;
 -- QUALITY CHANGED: Zandalar Vindicator's Belt (ilevel 61 entry 19823)
@@ -4540,11 +4540,11 @@ UPDATE item_template SET `stat_value1`=12, `stat_value2`=11, `stat_value3`=11, `
 -- QUALITY CHANGED: Zandalar Vindicator's Armguards (ilevel 61 entry 19824)
 UPDATE item_template SET Quality=3 WHERE entry=19824;
 -- NOT FOUND: Zandalar Freethinker's Breastplate (ilevel 65 entry 19825)
-DELETE FROM item_template WHERE entry=19825;
+-- DELETE FROM item_template WHERE entry=19825;
 -- NOT FOUND: Zandalar Freethinker's Belt (ilevel 61 entry 19826)
-DELETE FROM item_template WHERE entry=19826;
+-- DELETE FROM item_template WHERE entry=19826;
 -- NOT FOUND: Zandalar Freethinker's Armguards (ilevel 61 entry 19827)
-DELETE FROM item_template WHERE entry=19827;
+-- DELETE FROM item_template WHERE entry=19827;
 -- STATS CHANGED: Zandalar Augur's Belt (ilevel 61 entry 19829). 1/2 versions
 UPDATE item_template SET `armor`=224 WHERE entry=19829;
 -- SPELLS CHANGED: Zandalar Augur's Belt (ilevel 61 entry 19829). 2 versions
@@ -4674,15 +4674,15 @@ UPDATE item_template SET Quality=3 WHERE entry=19849;
 UPDATE item_template SET `spellid_2`=13386 WHERE entry=19862;
 -- DAMAGE CHANGED: Bloodcaller (ilevel 68 entry 19864). 1/1 versions
 -- Source: http://www.thottbot.com/?n=743454
-UPDATE item_template SET `dmg_min1`=52, `dmg_max1`=113 WHERE entry=19864;
+UPDATE item_template SET `dmg_min1`=52, `dmg_max1`=113 WHERE entry= AND patch = 5;
 -- NOT FOUND: Bloodlord's Defender (ilevel 66 entry 19867)
-DELETE FROM item_template WHERE entry=19867;
+-- DELETE FROM item_template WHERE entry=19867;
 -- NOT FOUND: Blooddrenched Grips (ilevel 71 entry 19869)
-DELETE FROM item_template WHERE entry=19869;
+-- DELETE FROM item_template WHERE entry=19869;
 -- NOT FOUND: Hakkari Loa Cloak (ilevel 71 entry 19870)
-DELETE FROM item_template WHERE entry=19870;
+-- DELETE FROM item_template WHERE entry=19870;
 -- NOT FOUND: Talisman of Protection (ilevel 68 entry 19871)
-DELETE FROM item_template WHERE entry=19871;
+-- DELETE FROM item_template WHERE entry=19871;
 -- SPELLS CHANGED: Overlord's Crimson Band (ilevel 71 entry 19873). 1 versions
 -- Source: http://wow.allakhazam.com/item.html?witem=19873
 -- * Modified spell 1
